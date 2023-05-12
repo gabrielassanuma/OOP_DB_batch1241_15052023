@@ -48,4 +48,13 @@ class GamesController
     game.destroy
     index
   end
+
+  def mark_as_played
+    index
+    game_id = @view.ask_user_for("id").to_i
+    game = Game.find(game_id)
+    game.played = true
+    game.save
+    index
+  end
 end

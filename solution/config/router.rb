@@ -12,7 +12,8 @@ class Router
       puts "3 - Add a new game"
       puts "4 - Update a game"
       puts "5 - Destroy a game"
-      puts "6 - End"
+      puts "6 - Mark game as played"
+      puts "7 - End"
       puts "---------------------"
       choice = gets.chomp.to_i
       if choice == 1
@@ -26,6 +27,8 @@ class Router
       elsif choice == 5
         @controller.destroy
       elsif choice == 6
+        @controller.mark_as_played
+      elsif choice == 7
         break
       else
         puts "Invalid option, try again"
