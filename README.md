@@ -25,7 +25,6 @@ Create DB
 ```bash
   rake db:create
   rake db:migrate
-  rake db:seed
 ```
 
 Run the program
