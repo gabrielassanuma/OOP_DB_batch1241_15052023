@@ -28,4 +28,8 @@ Create DB
   rake db:seed
 ```
 
-Make sure you are on the right folder.
+Run the program
+```bash
+  ruby challenge/lib/app.rb 
+```
+
