@@ -13,4 +13,9 @@ class View
     puts "address: #{item.address}"
   end
 
+  def ask_user_for(stuff)
+    puts "Enter game's #{stuff}:"
+    gets.chomp
+  end
+
 end

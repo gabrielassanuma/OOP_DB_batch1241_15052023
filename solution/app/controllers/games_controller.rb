@@ -20,5 +20,14 @@ class GamesController
     @view.show(game)
   end
 
-  
+  def create
+    name = @view.ask_user_for("name")
+    genre = @view.ask_user_for("genre")
+    address = @view.ask_user_for("address")
+    game = Game.create(name: name, genre: genre, address: address)
+    puts "#{game.name} created!"
+    @view.show(game)
+  end
+
+
 end
