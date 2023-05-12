@@ -1,3 +1,9 @@
+require_relative "../views/view"
+require_relative "../models/game"
+
 class GamesController
-# TODO
+  def initialize
+    @view = View.new
+  end
+  # TODO  
 end
