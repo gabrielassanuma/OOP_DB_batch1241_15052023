@@ -22,7 +22,7 @@ Open on vs-code
 
 Run the program
 ```bash
-  ruby challenge/lib/app.rb 
+  ruby lib/app.rb 
 ```
 
 Create DB
@@ -31,28 +31,44 @@ Create DB
   rake db:create
 ```
 
-## Instructions
-1 - Our first step should be to create a migration file to create the "Games" table, which should have 3 columns: name, genre, and address.
-2 - Now that our database is created, we need to write our first objects into the database. Use faker to create 5 games in our DB.
-3 - Now let's move on to the logical part. For our application, we will need to create the following actions:
-- Show all games
-- Show a game
-- Add a new game
-- Update a game
-- Destroy a game
-- Finish the program
-4 - Let's create our first action: "Show all games."
-- Add this action to your config/router.rb.
-- Add the index function to your controller.
-- Create a function in your view to display all games to the user.
-5 - Moving on to the second action: "Show a game."
-- Follow the same logic: router -> controller -> view.
-6 - Time to play with the "C" of CRUD; let's create an action to add a new game.
-- Again, follow the router -> controller -> view pattern.
-7 - Let's create our update function. Can you guess how to implement it?
-- Same pattern: router -> controller -> view.
-8 - Time to implement our last CRUD action: delete.
-- You know the way...
-9 - Our application is working really well so far! Now it's time to implement a new feature. We want to allow the user to mark a game as played.
-- Let's modify our DB by adding a new column named played to the "Games" table. Set it to be a boolean, with a default value of false.
-- One more time: router -> controller -> view.
+## Overview
+This document provides instructions for a programming exercise. It outlines the steps required to complete the exercise and build an application with specific functionalities. Follow the instructions below to complete the exercise successfully.
+
+## Exercise Steps
+### Database Setup
+Create a migration file to set up the "Games" table in the database.
+The "Games" table should have three columns: name, genre, and address.
+
+### Initial Data
+Populate the database with five game records using the Faker library.
+
+### Application Actions
+The application should support the following actions:
+Show all games: Display a list of all games in the database.
+Show a game: Show details of a specific game.
+Add a new game: Allow users to add a new game to the database.
+Update a game: Enable users to update the information of an existing game.
+Destroy a game: Allow users to delete a game from the database.
+Finish program: Terminate the program execution.
+
+### Action 1: Show all games
+Add the necessary action to your config/router.rb file.
+Implement the index function in your controller.
+Create a view function to display all games to the user.
+
+### Action 2: Show a game
+Follow the same logic as before: router -> controller -> view.
+
+### Action 3: Add a new game
+Repeat the pattern: router -> controller -> view.
+
+### Action 4: Update a game
+Same pattern: router -> controller -> view.
+
+### Action 5: Destroy a game
+You already know how to do it.
+
+### New Feature: Mark a game as played
+Modify the database by adding a new column named played to the "Games" table.
+Set the default value of the played column to false.
+Once again, follow the router -> controller -> view pattern.
