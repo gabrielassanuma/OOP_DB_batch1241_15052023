@@ -41,7 +41,11 @@ class GamesController
     @view.show(game)
   end
 
-  
-
-
+  def destroy
+    index
+    game_id = @view.ask_user_for("id").to_i
+    game = Game.find(game_id)
+    game.destroy
+    index
+  end
 end
