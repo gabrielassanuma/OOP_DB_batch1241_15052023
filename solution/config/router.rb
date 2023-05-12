@@ -8,8 +8,8 @@ class Router
       puts "---------------------"
       puts "what do you wanna do?"
       puts "1 - Show all games"
-      puts "2 - Add a new game"
-      puts "3 - Show a game"
+      puts "2 - Show a game"
+      puts "3 - Add a new game"
       puts "4 - Update a game"
       puts "5 - Destroy a game"
       puts "6 - End"
@@ -17,6 +17,8 @@ class Router
       choice = gets.chomp.to_i
       if choice == 1
         @controller.index
+      elsif choice == 2
+        @controller.show
       elsif choice == 6
         break
       else
