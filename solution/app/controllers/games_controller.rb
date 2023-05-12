@@ -29,5 +29,19 @@ class GamesController
     @view.show(game)
   end
 
+  def update
+    index
+    game_id = @view.ask_user_for("id").to_i
+    game = Game.find(game_id)
+    game.name = @view.ask_user_for("new name")
+    game.genre = @view.ask_user_for("new genre")
+    game.address = @view.ask_user_for("new address")
+    game.save
+    puts "Game info updated:"
+    @view.show(game)
+  end
+
+  
+
 
 end

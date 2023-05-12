@@ -21,6 +21,8 @@ class Router
         @controller.show
       elsif choice == 3
         @controller.create
+      elsif choice == 4
+        @controller.update
       elsif choice == 6
         break
       else
