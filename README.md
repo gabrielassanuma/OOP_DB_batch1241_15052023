@@ -1,4 +1,4 @@
-# OOP_DB_batch1158_20230212
+# OOP_DB_batch1241_15052023
 
 ## Run Locally
 
@@ -44,12 +44,12 @@ Populate the database with five game records using the Faker library.
 
 ### Application Actions
 The application should support the following actions:\
-Show all games: Display a list of all games in the database.\
-Show a game: Show details of a specific game.\
-Add a new game: Allow users to add a new game to the database.\
-Update a game: Enable users to update the information of an existing game.\
-Destroy a game: Allow users to delete a game from the database.\
-Finish program: Terminate the program execution.
+  Show all games: Display a list of all games in the database.\
+  Show a game: Show details of a specific game.\
+  Add a new game: Allow users to add a new game to the database.\
+  Update a game: Enable users to update the information of an existing game.\
+  Destroy a game: Allow users to delete a game from the database.\
+  Finish program: Terminate the program execution.
 
 ### Action 1: Show all games
 Add the necessary action to your config/router.rb file.\
@@ -57,16 +57,16 @@ Implement the index function in your controller.\
 Create a view function to display all games to the user.
 
 ### Action 2: Show a game
-Follow the same logic as before: router -> controller -> view.
+Follow the same logic as before: router -> controller -> view. 🔄
 
 ### Action 3: Add a new game
-Repeat the pattern: router -> controller -> view.
+Repeat the pattern: router -> controller -> view. 🔃
 
 ### Action 4: Update a game
-Same pattern: router -> controller -> view.
+Same pattern: router -> controller -> view. 🔁
 
 ### Action 5: Destroy a game
-You already know how to do it.
+You already know how to do it. 🤓👩🏻‍💻
 
 ### New Feature: Mark a game as played
 Modify the database by adding a new column named played to the "Games" table.\
